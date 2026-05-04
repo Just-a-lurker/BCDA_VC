@@ -13,36 +13,44 @@ data = []
 converted_files = [f for f in os.listdir(converted_dir) if f.endswith('.wav')]
 
 for f in original_files:
-    name_no_ext = os.path.splitext(f)[0]
+    # 1. Lấy tên file bỏ đuôi .wav
+    full_name = os.path.splitext(f)[0]
 
-    # Tạo pattern để tìm các file liên quan:
-    # Khớp chính xác "ID.wav" hoặc "ID_hậu_tố.wav"
-    # Ví dụ với ID là 1: khớp "1.wav", "1_male.wav", "1_male_1.wav"
-    # Không khớp: "10.wav", "11.wav"
+    # 2. Loại bỏ hậu tố "_original" để lấy ID thực tế
+    # Ví dụ: "1_original" -> "1", "song_abc_original" -> "song_abc"
+    name_no_ext = re.sub(r'_original$', '', full_name)
+
+    # 3. Pattern tìm kiếm: Khớp với ID hoặc ID_hậu_tố
+    # Logic: Tìm các file trong converted bắt đầu bằng ID, theo sau là dấu gạch dưới hoặc kết thúc luôn
     pattern = re.compile(rf"^{re.escape(name_no_ext)}(_.*)?\.wav$")
-
     related_files = [cf for cf in converted_files if pattern.match(cf)]
 
-    female_file = f if f in related_files else None
+    # 4. Xác định file female (thường trùng tên với ID ban đầu hoặc giữ nguyên file gốc)
+    # Tùy vào việc folder converted của bạn lưu file nữ là "1.wav" hay "1_original.wav"
+    # Ở đây mình ưu tiên tìm file "ID.wav" trước
+    female_file_name = f"{name_no_ext}.wav"
+    female_path = f"audios/converted/{female_file_name}" if female_file_name in related_files else None
 
+    # 5. Xác định file male chuẩn (ID_male.wav)
     male_file_name = f"{name_no_ext}_male.wav"
     male_path = f"audios/converted/{male_file_name}" if male_file_name in related_files else None
 
-    # Tìm các file "others" (có trong related nhưng không phải female và không phải male chuẩn)
+    # 6. Tìm các file "others"
+    # Loại trừ file male_file_name và female_file_name đã xác định ở trên
     others = []
     for cf in related_files:
-        if cf != f and cf != male_file_name:
+        if cf != female_file_name and cf != male_file_name:
             others.append(f"audios/converted/{cf}")
 
     data.append({
         "id": name_no_ext,
         "original": f"audios/original/{f}",
-        "female": f"audios/converted/{f}" if female_file else None,
+        "female": female_path,
         "male": male_path,
         "others": sorted(others)
     })
 
-# Sắp xếp lại data theo ID số (nếu ID là số) để hiển thị đúng thứ tự 1, 2, 3... thay vì 1, 10, 11
+# Sắp xếp lại data theo ID
 try:
     data.sort(key=lambda x: int(x['id']))
 except ValueError:
@@ -51,4 +59,4 @@ except ValueError:
 with open('data.json', 'w', encoding='utf-8') as f:
     json.dump(data, f, indent=4, ensure_ascii=False)
 
-print(f"Đã cập nhật data.json thành công.")
+print(f"Đã cập nhật data.json thành công với ID sạch (không kèm _original).")

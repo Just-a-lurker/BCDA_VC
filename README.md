@@ -30,7 +30,7 @@ Vui lòng mở một **Issue** trên GitHub hoặc liên hệ trực tiếp vớ
 
 Kho lưu trữ này dùng để thử nghiệm và lưu kết quả của kiến ​​trúc phần mềm được đề xuất.
 
-Để nghe kết quả, vui lòng truy cập **[cloudflare deployment](https://just-a-lurker.github.io/BCDA_VC/)** của kho lưu trữ này.
+Để nghe kết quả, vui lòng truy cập **[cloudflare deployment](https://bcda-vc.hoangmegamanxyz.workers.dev/)** của kho lưu trữ này.
 
 ## Các dự án liên quan
 

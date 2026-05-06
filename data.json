@@ -3,16 +3,16 @@
         "id": "0_1",
         "original": "audios/original/0_1_original.wav",
         "female": "audios/converted/0_1.wav",
-        "male": null,
+        "male": "audios/converted/0_1_male.wav",
         "others": [
             "audios/converted/0_1_1.wav",
-            "audios/converted/0_1_2.wav"
+            "audios/converted/0_1_male_1.wav"
         ]
     },
     {
         "id": "0_2",
         "original": "audios/original/0_2_original.wav",
-        "female": null,
+        "female": "audios/converted/0_2.wav",
         "male": "audios/converted/0_2_male.wav",
         "others": [
             "audios/converted/0_2_male_1.wav",
@@ -27,11 +27,33 @@
         "others": []
     },
     {
+        "id": "0_3",
+        "original": "audios/original/0_3_original.wav",
+        "female": "audios/converted/0_3.wav",
+        "male": "audios/converted/0_3_male.wav",
+        "others": [
+            "audios/converted/0_3_fe_1.wav",
+            "audios/converted/0_3_fe_2.wav",
+            "audios/converted/0_3_male_1.wav",
+            "audios/converted/0_3_male_2.wav"
+        ]
+    },
+    {
         "id": "3",
         "original": "audios/original/3_original.wav",
         "female": "audios/converted/3.wav",
         "male": "audios/converted/3_male.wav",
         "others": []
+    },
+    {
+        "id": "0_4",
+        "original": "audios/original/0_4_original.wav",
+        "female": "audios/converted/0_4.wav",
+        "male": "audios/converted/0_4_male.wav",
+        "others": [
+            "audios/converted/0_4_male_1.wav",
+            "audios/converted/0_4_male_2.wav"
+        ]
     },
     {
         "id": "4",
@@ -41,11 +63,31 @@
         "others": []
     },
     {
+        "id": "0_5",
+        "original": "audios/original/0_5_original.wav",
+        "female": "audios/converted/0_5.wav",
+        "male": "audios/converted/0_5_male.wav",
+        "others": [
+            "audios/converted/0_5_1.wav",
+            "audios/converted/0_5_male_1.wav"
+        ]
+    },
+    {
         "id": "5",
         "original": "audios/original/5_original.wav",
         "female": "audios/converted/5.wav",
         "male": "audios/converted/5_male.wav",
         "others": []
+    },
+    {
+        "id": "0_6",
+        "original": "audios/original/0_6_original.wav",
+        "female": "audios/converted/0_6.wav",
+        "male": "audios/converted/0_6_male.wav",
+        "others": [
+            "audios/converted/0_6_1.wav",
+            "audios/converted/0_6_male_1.wav"
+        ]
     },
     {
         "id": "6",
@@ -55,11 +97,35 @@
         "others": []
     },
     {
+        "id": "0_7",
+        "original": "audios/original/0_7_original.wav",
+        "female": "audios/converted/0_7.wav",
+        "male": "audios/converted/0_7_male.wav",
+        "others": [
+            "audios/converted/0_7_1.wav",
+            "audios/converted/0_7_2.wav",
+            "audios/converted/0_7_male_1.wav",
+            "audios/converted/0_7_male_2.wav"
+        ]
+    },
+    {
         "id": "7",
         "original": "audios/original/7_original.wav",
         "female": "audios/converted/7.wav",
         "male": "audios/converted/7_male.wav",
         "others": []
+    },
+    {
+        "id": "0_8",
+        "original": "audios/original/0_8_original.wav",
+        "female": "audios/converted/0_8.wav",
+        "male": "audios/converted/0_8_male.wav",
+        "others": [
+            "audios/converted/0_8_1.wav",
+            "audios/converted/0_8_2.wav",
+            "audios/converted/0_8_male_1.wav",
+            "audios/converted/0_8_male_2.wav"
+        ]
     },
     {
         "id": "8",

@@ -8,7 +8,7 @@ If you have any questions or comments regarding these demos, please open an **Is
 ## Graduation Thesis Demo Collection
 
 This repository serves as a dedicated testing and demonstration for the proposed software architectures.
-To listen to the results, please visit this repo's **[deployment](https://just-a-lurker.github.io/BCDA_VC/)**
+To listen to the results, please visit this repo's **[cloudflare deployment](https://bcda-vc.hoangmegamanxyz.workers.dev/)**
 
 ## Related Projects
 
@@ -30,7 +30,7 @@ Vui lòng mở một **Issue** trên GitHub hoặc liên hệ trực tiếp vớ
 
 Kho lưu trữ này dùng để thử nghiệm và lưu kết quả của kiến ​​trúc phần mềm được đề xuất.
 
-Để nghe kết quả, vui lòng truy cập **[deployment](https://just-a-lurker.github.io/BCDA_VC/)** của kho lưu trữ này.
+Để nghe kết quả, vui lòng truy cập **[cloudflare deployment](https://just-a-lurker.github.io/BCDA_VC/)** của kho lưu trữ này.
 
 ## Các dự án liên quan
 

@@ -2,309 +2,404 @@
     {
         "id": "0_1",
         "original": "audios/original/0_1_original.wav",
-        "female": "audios/converted/0_1.wav",
-        "male": "audios/converted/0_1_male.wav",
-        "others": [
+        "female_main": "audios/converted/0_1.wav",
+        "female_others": [
             "audios/converted/0_1_1.wav",
-            "audios/converted/0_1_male_1.wav"
-        ]
+            "audios/converted/0_1_2.wav"
+        ],
+        "male_main": "audios/converted/0_1_male.wav",
+        "male_others": [
+            "audios/converted/0_1_male_1.wav",
+            "audios/converted/0_1_male_2.wav"
+        ],
+        "is_prefix_0": true
     },
     {
         "id": "0_2",
         "original": "audios/original/0_2_original.wav",
-        "female": "audios/converted/0_2.wav",
-        "male": "audios/converted/0_2_male.wav",
-        "others": [
+        "female_main": "audios/converted/0_2.wav",
+        "female_others": [
+            "audios/converted/0_2_1.wav",
+            "audios/converted/0_2_2.wav"
+        ],
+        "male_main": "audios/converted/0_2_male.wav",
+        "male_others": [
             "audios/converted/0_2_male_1.wav",
             "audios/converted/0_2_male_2.wav"
-        ]
-    },
-    {
-        "id": "2",
-        "original": "audios/original/2_original.wav",
-        "female": "audios/converted/2.wav",
-        "male": "audios/converted/2_male.wav",
-        "others": []
+        ],
+        "is_prefix_0": true
     },
     {
         "id": "0_3",
         "original": "audios/original/0_3_original.wav",
-        "female": "audios/converted/0_3.wav",
-        "male": "audios/converted/0_3_male.wav",
-        "others": [
-            "audios/converted/0_3_fe_1.wav",
-            "audios/converted/0_3_fe_2.wav",
+        "female_main": "audios/converted/0_3.wav",
+        "female_others": [
+            "audios/converted/0_3_1.wav",
+            "audios/converted/0_3_2.wav"
+        ],
+        "male_main": "audios/converted/0_3_male.wav",
+        "male_others": [
             "audios/converted/0_3_male_1.wav",
             "audios/converted/0_3_male_2.wav"
-        ]
-    },
-    {
-        "id": "3",
-        "original": "audios/original/3_original.wav",
-        "female": "audios/converted/3.wav",
-        "male": "audios/converted/3_male.wav",
-        "others": []
+        ],
+        "is_prefix_0": true
     },
     {
         "id": "0_4",
         "original": "audios/original/0_4_original.wav",
-        "female": "audios/converted/0_4.wav",
-        "male": "audios/converted/0_4_male.wav",
-        "others": [
+        "female_main": "audios/converted/0_4.wav",
+        "female_others": [
+            "audios/converted/0_4_1.wav",
+            "audios/converted/0_4_2.wav"
+        ],
+        "male_main": "audios/converted/0_4_male.wav",
+        "male_others": [
             "audios/converted/0_4_male_1.wav",
             "audios/converted/0_4_male_2.wav"
-        ]
-    },
-    {
-        "id": "4",
-        "original": "audios/original/4_original.wav",
-        "female": "audios/converted/4.wav",
-        "male": "audios/converted/4_male.wav",
-        "others": []
+        ],
+        "is_prefix_0": true
     },
     {
         "id": "0_5",
         "original": "audios/original/0_5_original.wav",
-        "female": "audios/converted/0_5.wav",
-        "male": "audios/converted/0_5_male.wav",
-        "others": [
+        "female_main": "audios/converted/0_5.wav",
+        "female_others": [
             "audios/converted/0_5_1.wav",
-            "audios/converted/0_5_male_1.wav"
-        ]
-    },
-    {
-        "id": "5",
-        "original": "audios/original/5_original.wav",
-        "female": "audios/converted/5.wav",
-        "male": "audios/converted/5_male.wav",
-        "others": []
+            "audios/converted/0_5_2.wav"
+        ],
+        "male_main": "audios/converted/0_5_male.wav",
+        "male_others": [
+            "audios/converted/0_5_male_1.wav",
+            "audios/converted/0_5_male_2.wav"
+        ],
+        "is_prefix_0": true
     },
     {
         "id": "0_6",
         "original": "audios/original/0_6_original.wav",
-        "female": "audios/converted/0_6.wav",
-        "male": "audios/converted/0_6_male.wav",
-        "others": [
+        "female_main": "audios/converted/0_6.wav",
+        "female_others": [
             "audios/converted/0_6_1.wav",
-            "audios/converted/0_6_male_1.wav"
-        ]
-    },
-    {
-        "id": "6",
-        "original": "audios/original/6_original.wav",
-        "female": "audios/converted/6.wav",
-        "male": "audios/converted/6_male.wav",
-        "others": []
+            "audios/converted/0_6_2.wav"
+        ],
+        "male_main": "audios/converted/0_6_male.wav",
+        "male_others": [
+            "audios/converted/0_6_male_1.wav",
+            "audios/converted/0_6_male_2.wav"
+        ],
+        "is_prefix_0": true
     },
     {
         "id": "0_7",
         "original": "audios/original/0_7_original.wav",
-        "female": "audios/converted/0_7.wav",
-        "male": "audios/converted/0_7_male.wav",
-        "others": [
+        "female_main": "audios/converted/0_7.wav",
+        "female_others": [
             "audios/converted/0_7_1.wav",
-            "audios/converted/0_7_2.wav",
+            "audios/converted/0_7_2.wav"
+        ],
+        "male_main": "audios/converted/0_7_male.wav",
+        "male_others": [
             "audios/converted/0_7_male_1.wav",
             "audios/converted/0_7_male_2.wav"
-        ]
-    },
-    {
-        "id": "7",
-        "original": "audios/original/7_original.wav",
-        "female": "audios/converted/7.wav",
-        "male": "audios/converted/7_male.wav",
-        "others": []
+        ],
+        "is_prefix_0": true
     },
     {
         "id": "0_8",
         "original": "audios/original/0_8_original.wav",
-        "female": "audios/converted/0_8.wav",
-        "male": "audios/converted/0_8_male.wav",
-        "others": [
+        "female_main": "audios/converted/0_8.wav",
+        "female_others": [
             "audios/converted/0_8_1.wav",
-            "audios/converted/0_8_2.wav",
+            "audios/converted/0_8_2.wav"
+        ],
+        "male_main": "audios/converted/0_8_male.wav",
+        "male_others": [
             "audios/converted/0_8_male_1.wav",
             "audios/converted/0_8_male_2.wav"
-        ]
+        ],
+        "is_prefix_0": true
+    },
+    {
+        "id": "2",
+        "original": "audios/original/2_original.wav",
+        "female_main": "audios/converted/2.wav",
+        "female_others": [],
+        "male_main": "audios/converted/2_male.wav",
+        "male_others": [],
+        "is_prefix_0": false
+    },
+    {
+        "id": "3",
+        "original": "audios/original/3_original.wav",
+        "female_main": "audios/converted/3.wav",
+        "female_others": [],
+        "male_main": "audios/converted/3_male.wav",
+        "male_others": [],
+        "is_prefix_0": false
+    },
+    {
+        "id": "4",
+        "original": "audios/original/4_original.wav",
+        "female_main": "audios/converted/4.wav",
+        "female_others": [],
+        "male_main": "audios/converted/4_male.wav",
+        "male_others": [],
+        "is_prefix_0": false
+    },
+    {
+        "id": "5",
+        "original": "audios/original/5_original.wav",
+        "female_main": "audios/converted/5.wav",
+        "female_others": [],
+        "male_main": "audios/converted/5_male.wav",
+        "male_others": [],
+        "is_prefix_0": false
+    },
+    {
+        "id": "6",
+        "original": "audios/original/6_original.wav",
+        "female_main": "audios/converted/6.wav",
+        "female_others": [],
+        "male_main": "audios/converted/6_male.wav",
+        "male_others": [],
+        "is_prefix_0": false
+    },
+    {
+        "id": "7",
+        "original": "audios/original/7_original.wav",
+        "female_main": "audios/converted/7.wav",
+        "female_others": [],
+        "male_main": "audios/converted/7_male.wav",
+        "male_others": [],
+        "is_prefix_0": false
     },
     {
         "id": "8",
         "original": "audios/original/8_original.wav",
-        "female": "audios/converted/8.wav",
-        "male": "audios/converted/8_male.wav",
-        "others": [
+        "female_main": "audios/converted/8.wav",
+        "female_others": [],
+        "male_main": "audios/converted/8_male.wav",
+        "male_others": [
             "audios/converted/8_male_1.wav"
-        ]
+        ],
+        "is_prefix_0": false
     },
     {
         "id": "9",
         "original": "audios/original/9_original.wav",
-        "female": "audios/converted/9.wav",
-        "male": "audios/converted/9_male.wav",
-        "others": []
+        "female_main": "audios/converted/9.wav",
+        "female_others": [],
+        "male_main": "audios/converted/9_male.wav",
+        "male_others": [],
+        "is_prefix_0": false
     },
     {
         "id": "10",
         "original": "audios/original/10_original.wav",
-        "female": "audios/converted/10.wav",
-        "male": "audios/converted/10_male.wav",
-        "others": [
+        "female_main": "audios/converted/10.wav",
+        "female_others": [],
+        "male_main": "audios/converted/10_male.wav",
+        "male_others": [
             "audios/converted/10_male_1.wav"
-        ]
+        ],
+        "is_prefix_0": false
     },
     {
         "id": "11",
         "original": "audios/original/11_original.wav",
-        "female": "audios/converted/11.wav",
-        "male": "audios/converted/11_male.wav",
-        "others": []
+        "female_main": "audios/converted/11.wav",
+        "female_others": [],
+        "male_main": "audios/converted/11_male.wav",
+        "male_others": [],
+        "is_prefix_0": false
     },
     {
         "id": "13",
         "original": "audios/original/13_original.wav",
-        "female": "audios/converted/13.wav",
-        "male": "audios/converted/13_male.wav",
-        "others": []
+        "female_main": "audios/converted/13.wav",
+        "female_others": [],
+        "male_main": "audios/converted/13_male.wav",
+        "male_others": [],
+        "is_prefix_0": false
     },
     {
         "id": "14",
         "original": "audios/original/14_original.wav",
-        "female": "audios/converted/14.wav",
-        "male": "audios/converted/14_male.wav",
-        "others": []
+        "female_main": "audios/converted/14.wav",
+        "female_others": [],
+        "male_main": "audios/converted/14_male.wav",
+        "male_others": [],
+        "is_prefix_0": false
     },
     {
         "id": "15",
         "original": "audios/original/15_original.wav",
-        "female": "audios/converted/15.wav",
-        "male": "audios/converted/15_male.wav",
-        "others": [
+        "female_main": "audios/converted/15.wav",
+        "female_others": [],
+        "male_main": "audios/converted/15_male.wav",
+        "male_others": [
             "audios/converted/15_male_1.wav",
             "audios/converted/15_male_2.wav"
-        ]
+        ],
+        "is_prefix_0": false
     },
     {
         "id": "16",
         "original": "audios/original/16_original.wav",
-        "female": "audios/converted/16.wav",
-        "male": "audios/converted/16_male.wav",
-        "others": []
+        "female_main": "audios/converted/16.wav",
+        "female_others": [],
+        "male_main": "audios/converted/16_male.wav",
+        "male_others": [],
+        "is_prefix_0": false
     },
     {
         "id": "17",
         "original": "audios/original/17_original.wav",
-        "female": "audios/converted/17.wav",
-        "male": "audios/converted/17_male.wav",
-        "others": []
+        "female_main": "audios/converted/17.wav",
+        "female_others": [],
+        "male_main": "audios/converted/17_male.wav",
+        "male_others": [],
+        "is_prefix_0": false
     },
     {
         "id": "18",
         "original": "audios/original/18_original.wav",
-        "female": "audios/converted/18.wav",
-        "male": "audios/converted/18_male.wav",
-        "others": []
+        "female_main": "audios/converted/18.wav",
+        "female_others": [],
+        "male_main": "audios/converted/18_male.wav",
+        "male_others": [],
+        "is_prefix_0": false
     },
     {
         "id": "19",
         "original": "audios/original/19_original.wav",
-        "female": "audios/converted/19.wav",
-        "male": "audios/converted/19_male.wav",
-        "others": []
+        "female_main": "audios/converted/19.wav",
+        "female_others": [],
+        "male_main": "audios/converted/19_male.wav",
+        "male_others": [],
+        "is_prefix_0": false
     },
     {
         "id": "20",
         "original": "audios/original/20_original.wav",
-        "female": "audios/converted/20.wav",
-        "male": "audios/converted/20_male.wav",
-        "others": []
+        "female_main": "audios/converted/20.wav",
+        "female_others": [],
+        "male_main": "audios/converted/20_male.wav",
+        "male_others": [],
+        "is_prefix_0": false
     },
     {
         "id": "21",
         "original": "audios/original/21_original.wav",
-        "female": "audios/converted/21.wav",
-        "male": "audios/converted/21_male.wav",
-        "others": [
+        "female_main": "audios/converted/21.wav",
+        "female_others": [],
+        "male_main": "audios/converted/21_male.wav",
+        "male_others": [
             "audios/converted/21_male_1.wav"
-        ]
+        ],
+        "is_prefix_0": false
     },
     {
         "id": "22",
         "original": "audios/original/22_original.wav",
-        "female": "audios/converted/22.wav",
-        "male": "audios/converted/22_male.wav",
-        "others": []
+        "female_main": "audios/converted/22.wav",
+        "female_others": [],
+        "male_main": "audios/converted/22_male.wav",
+        "male_others": [],
+        "is_prefix_0": false
     },
     {
         "id": "23",
         "original": "audios/original/23_original.wav",
-        "female": "audios/converted/23.wav",
-        "male": "audios/converted/23_male.wav",
-        "others": []
+        "female_main": "audios/converted/23.wav",
+        "female_others": [],
+        "male_main": "audios/converted/23_male.wav",
+        "male_others": [],
+        "is_prefix_0": false
     },
     {
         "id": "24",
         "original": "audios/original/24_original.wav",
-        "female": "audios/converted/24.wav",
-        "male": "audios/converted/24_male.wav",
-        "others": []
+        "female_main": "audios/converted/24.wav",
+        "female_others": [],
+        "male_main": "audios/converted/24_male.wav",
+        "male_others": [],
+        "is_prefix_0": false
     },
     {
         "id": "25",
         "original": "audios/original/25_original.wav",
-        "female": "audios/converted/25.wav",
-        "male": "audios/converted/25_male.wav",
-        "others": []
+        "female_main": "audios/converted/25.wav",
+        "female_others": [],
+        "male_main": "audios/converted/25_male.wav",
+        "male_others": [],
+        "is_prefix_0": false
     },
     {
         "id": "26",
         "original": "audios/original/26_original.wav",
-        "female": "audios/converted/26.wav",
-        "male": "audios/converted/26_male.wav",
-        "others": []
+        "female_main": "audios/converted/26.wav",
+        "female_others": [],
+        "male_main": "audios/converted/26_male.wav",
+        "male_others": [],
+        "is_prefix_0": false
     },
     {
         "id": "27",
         "original": "audios/original/27_original.wav",
-        "female": "audios/converted/27.wav",
-        "male": "audios/converted/27_male.wav",
-        "others": []
+        "female_main": "audios/converted/27.wav",
+        "female_others": [],
+        "male_main": "audios/converted/27_male.wav",
+        "male_others": [],
+        "is_prefix_0": false
     },
     {
         "id": "28",
         "original": "audios/original/28_original.wav",
-        "female": "audios/converted/28.wav",
-        "male": "audios/converted/28_male.wav",
-        "others": []
+        "female_main": "audios/converted/28.wav",
+        "female_others": [],
+        "male_main": "audios/converted/28_male.wav",
+        "male_others": [],
+        "is_prefix_0": false
     },
     {
         "id": "29",
         "original": "audios/original/29_original.wav",
-        "female": "audios/converted/29.wav",
-        "male": "audios/converted/29_male.wav",
-        "others": []
+        "female_main": "audios/converted/29.wav",
+        "female_others": [],
+        "male_main": "audios/converted/29_male.wav",
+        "male_others": [],
+        "is_prefix_0": false
     },
     {
         "id": "30",
         "original": "audios/original/30_original.wav",
-        "female": "audios/converted/30.wav",
-        "male": "audios/converted/30_male.wav",
-        "others": []
+        "female_main": "audios/converted/30.wav",
+        "female_others": [],
+        "male_main": "audios/converted/30_male.wav",
+        "male_others": [],
+        "is_prefix_0": false
     },
     {
         "id": "31",
         "original": "audios/original/31_original.wav",
-        "female": "audios/converted/31.wav",
-        "male": "audios/converted/31_male.wav",
-        "others": [
-            "audios/converted/31_1.wav",
+        "female_main": "audios/converted/31.wav",
+        "female_others": [
+            "audios/converted/31_1.wav"
+        ],
+        "male_main": "audios/converted/31_male.wav",
+        "male_others": [
             "audios/converted/31_male_1.wav"
-        ]
+        ],
+        "is_prefix_0": false
     },
     {
         "id": "32",
         "original": "audios/original/32_original.wav",
-        "female": "audios/converted/32.wav",
-        "male": "audios/converted/32_male.wav",
-        "others": []
+        "female_main": "audios/converted/32.wav",
+        "female_others": [],
+        "male_main": "audios/converted/32_male.wav",
+        "male_others": [],
+        "is_prefix_0": false
     }
 ]

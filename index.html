@@ -2,114 +2,105 @@
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <title>Voice Conversion Comparison</title>
+    <title>Voice Conversion Demos</title>
     <style>
-        body { font-family: 'Segoe UI', sans-serif; padding: 30px; background: #f8f9fa; }
-        table { width: 100%; border-collapse: collapse; background: white; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
-        th, td { padding: 12px; border: 1px solid #dee2e6; text-align: center; }
-        th { background-color: #343a40; color: white; }
-        /* Tối ưu kích thước audio để tiết kiệm diện tích */
-        audio { width: 220px; height: 35px; display: block; margin: 5px auto; }
-        .other-container { max-height: 150px; overflow-y: auto; }
-        .file-name { font-size: 10px; color: #777; display: block; }
+        body { font-family: 'Segoe UI', Tahoma, sans-serif; padding: 20px; background: #f0f2f5; }
+        .section-title {color: black; padding: 15px; margin-top: 40px; border-radius: 8px 8px 0 0; }
+        
+        .table-container { width: 100%; overflow-x: auto; margin-bottom: 50px; background: white; border-radius: 0 0 8px 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+        table { width: 100%; border-collapse: collapse; min-width: 1600px; }
+        th, td { padding: 12px; border: 1px solid #e0e0e0; text-align: center; vertical-align: top; }
+        th { background-color: #343a40; color: white; position: sticky; top: 0; z-index: 10; }
+
+        /* Tối ưu Player */
+        audio { width: 380px; height: 40px; display: block; margin: 5px auto; }
+        
+        .file-box { margin-bottom: 10px; padding: 8px; background: #f9f9f9; border-radius: 4px; border: 1px solid #eee; }
+        .file-label { font-size: 11px; color: #666; font-weight: bold; display: block; margin-bottom: 3px; }
+        .main-audio { border-left: 4px solid #28a745; }
+        .other-audio { border-left: 4px solid #ffc107; }
     </style>
 </head>
 <body>
-    <h2 style="text-align: center;">Bảng So Sánh Kết Quả Voice Conversion</h2>
-<div class="table-container">
-        <table>
-            <thead>
-                <tr>
-                    <th>ID</th>
-                    <th>File Gốc</th>
-                    <th>Giọng Nữ</th>
-                    <th>Giọng Nam</th>
-                    <th>Other (Phiên bản khác)</th>
-                </tr>
-            </thead>
-            <tbody id="audio-table-body"></tbody>
-        </table>
+
+    <h1 style="text-align: center;">Voice Conversion Demos</h1>
+
+    <div id="content">
+        <!-- Phần 1: Prefix 0_ -->
+        <h2 class="section-title">PHẦN 1: ĐỌC (READ)</h2>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th style="width: 80px;">ID</th>
+                        <th>File Gốc</th>
+                        <th>Giọng Nữ (Chính + Khác)</th>
+                        <th>Giọng Nam (Chính + Khác)</th>
+                    </tr>
+                </thead>
+                <tbody id="table-prefix-0"></tbody>
+            </table>
+        </div>
+
+        <!-- Phần 2: Còn lại -->
+        <h2 class="section-title">PHẦN 2: HÁT (SINGING)</h2>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th style="width: 80px;">ID</th>
+                        <th>File Gốc</th>
+                        <th>Giọng Nữ (Chính + Khác)</th>
+                        <th>Giọng Nam (Chính + Khác)</th>
+                    </tr>
+                </thead>
+                <tbody id="table-others"></tbody>
+            </table>
+        </div>
     </div>
 
     <script>
-        fetch('data.json')
-            .then(response => response.json())
-            .then(data => {
-                const tbody = document.getElementById('audio-table-body');
-                data.forEach(item => {
-                    // Xử lý logic cho cột Other
-                    let othersHtml = '-';
-                    if (item.others && item.others.length > 0) {
-                        othersHtml = item.others.map(path => {
-                            const fileName = path.split('/').pop();
-                            return `
-                                <div style="margin-bottom: 8px;">
-                                    <audio controls preload="none" src="${path}"></audio>
-                                </div>`;
-                        }).join('');
-                    }
+        function createAudioHTML(path, label, isMain) {
+            if (!path) return '';
+            const fileName = path.split('/').pop();
+            return `
+                <div class="file-box ${isMain ? 'main-audio' : 'other-audio'}">
+                    <span class="file-label"> ${fileName}</span>
+                    <audio controls preload="none" src="${path}"></audio>
+                </div>`;
+        }
 
-                    const row = `
+        fetch('data.json')
+            .then(res => res.json())
+            .then(data => {
+                const tbody0 = document.getElementById('table-prefix-0');
+                const tbodyOthers = document.getElementById('table-others');
+
+                data.forEach(item => {
+                    // Gom nhóm Nữ
+                    let femaleCol = createAudioHTML(item.female_main, 'Nữ Chính', true);
+                    item.female_others.forEach(p => femaleCol += createAudioHTML(p, 'Nữ Var', false));
+
+                    // Gom nhóm Nam
+                    let maleCol = createAudioHTML(item.male_main, 'Nam Chính', true);
+                    item.male_others.forEach(p => maleCol += createAudioHTML(p, 'Nam Var', false));
+
+                    const rowHtml = `
                         <tr>
                             <td><strong>${item.id}</strong></td>
-                            <td>
-                                <audio controls preload="none" src="${item.original}"></audio>
-                            </td>
-                            <td>
-                                ${item.female ? `<audio controls preload="none" src="${item.female}"></audio>` : '-'}
-                            </td>
-                            <td>
-                                ${item.male ? `<audio controls preload="none" src="${item.male}"></audio>` : '-'}
-                            </td>
-                            <td><div class="other-container">${othersHtml}</div></td>
+                            <td>${createAudioHTML(item.original, 'Original', true)}</td>
+                            <td>${femaleCol || '-'}</td>
+                            <td>${maleCol || '-'}</td>
                         </tr>
                     `;
-                    tbody.innerHTML += row;
+
+                    if (item.is_prefix_0) {
+                        tbody0.innerHTML += rowHtml;
+                    } else {
+                        tbodyOthers.innerHTML += rowHtml;
+                    }
                 });
-            })
-            .catch(err => console.error('Lỗi load dữ liệu:', err));
+            });
     </script>
 </body>
 </html>
-
-<style>
-    body { font-family: 'Segoe UI', sans-serif; padding: 20px; background: #f8f9fa; }
-    
-    /* Cho phép bảng cuộn ngang nếu quá rộng */
-    .table-container {
-        width: 100%;
-        overflow-x: auto;
-    }
-
-    table { 
-        width: 100%; 
-        border-collapse: collapse; 
-        background: white; 
-        min-width: 1200px; /* Đảm bảo bảng đủ rộng để không bóp nghẹt các cột */
-    }
-
-    th, td { padding: 15px; border: 1px solid #dee2e6; text-align: center; }
-    th { background-color: #343a40; color: white; position: sticky; top: 0; }
-
-    /* Quan trọng: Tăng chiều rộng Player */
-    audio { 
-        width: 400px; /* Tăng từ 220px lên 400px để thanh progress hiện rõ */
-        height: 40px; 
-        display: block; 
-        margin: 8px auto; 
-    }
-
-    .other-container { 
-        max-height: 300px; 
-        overflow-y: auto; 
-        padding: 5px;
-    }
-
-    .file-name { 
-        font-size: 11px; 
-        color: #555; 
-        font-weight: bold;
-        margin-bottom: 2px; 
-        display: block; 
-    }
-</style>

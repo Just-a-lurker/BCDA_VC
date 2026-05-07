@@ -298,7 +298,9 @@
         "female_main": "audios/converted/20.wav",
         "female_others": [],
         "male_main": "audios/converted/20_male.wav",
-        "male_others": [],
+        "male_others": [
+            "audios/converted/20_male_1.wav"
+        ],
         "is_prefix_0": false
     },
     {
@@ -336,7 +338,9 @@
         "female_main": "audios/converted/24.wav",
         "female_others": [],
         "male_main": "audios/converted/24_male.wav",
-        "male_others": [],
+        "male_others": [
+            "audios/converted/24_male_1.wav"
+        ],
         "is_prefix_0": false
     },
     {

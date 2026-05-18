@@ -5,7 +5,7 @@ If you have any questions or comments regarding these demos, please open an **Is
 ---
 
 # Research and Application of Diffusion-Based Voice Conversion for Vietnamese Speech
-## Graduation Thesis Demo Collection
+## Graduation Project Demo Collection
 
 This repository serves as a dedicated testing and demonstration for the proposed software architectures.
 To listen to the results, please visit this repo's **[cloudflare deployment](https://bcda-vc.hoangmegamanxyz.workers.dev/)**
@@ -14,9 +14,9 @@ To listen to the results, please visit this repo's **[cloudflare deployment](htt
 
 This is only the demo part of the thesis. For full technical details and complete implementations, please refer to the following repositories:
 
-1. **[SingingVocoders](https://github.com/Just-a-lurker/SingingVocoders)**: Repo for training/finetuning the vocoder.
+1. **[SingingVocoders](https://github.com/Just-a-lurker/SingingVocoders)**: Repo for training/finetuning the encoder.
 2. **[Diffusion-SVC](https://github.com/Just-a-lurker/Diffusion-SVC)**: Repo for training/finetuning the diffusion models.
-3. **[Contentvec](https://github.com/Just-a-lurker/contentvec)**: Repo for training/finetuning the encoder.
+3. **[Contentvec](https://github.com/Just-a-lurker/contentvec)**: Repo for training/finetuning the decoder.
 
 ---
 ## Thông tin liên hệ

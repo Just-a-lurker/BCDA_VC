@@ -12,7 +12,7 @@ To listen to the results, please visit this repo's **[cloudflare deployment](htt
 
 ## Related Projects
 
-This is only the demo part of the thesis. For full technical details and complete implementations, please refer to the following repositories:
+This is only the demo part of the project. For full technical details and complete implementations, please refer to the following repositories:
 
 1. **[SingingVocoders](https://github.com/Just-a-lurker/SingingVocoders)**: Repo for training/finetuning the encoder.
 2. **[Diffusion-SVC](https://github.com/Just-a-lurker/Diffusion-SVC)**: Repo for training/finetuning the diffusion models.

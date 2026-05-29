@@ -14,9 +14,9 @@ To listen to the results, please visit this repo's **[cloudflare deployment](htt
 
 This is only the demo part of the project. For full technical details and complete implementations, please refer to the following repositories:
 
-1. **[SingingVocoders](https://github.com/Just-a-lurker/SingingVocoders)**: Repo for training/finetuning the encoder.
+1. **[SingingVocoders](https://github.com/Just-a-lurker/SingingVocoders)**: Repo for training/finetuning the vocoder.
 2. **[Diffusion-SVC](https://github.com/Just-a-lurker/Diffusion-SVC)**: Repo for training/finetuning the diffusion models.
-3. **[Contentvec](https://github.com/Just-a-lurker/contentvec)**: Repo for training/finetuning the decoder.
+3. **[Contentvec](https://github.com/Just-a-lurker/contentvec)**: Repo for training/finetuning the encoder.
 
 ---
 ## Thông tin liên hệ

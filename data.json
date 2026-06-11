@@ -120,6 +120,15 @@
         "is_prefix_0": true
     },
     {
+        "id": "0_9",
+        "original": "audios/original/0_9_original.wav",
+        "female_main": "audios/converted/0_9.wav",
+        "female_others": [],
+        "male_main": "audios/converted/0_9_male.wav",
+        "male_others": [],
+        "is_prefix_0": true
+    },
+    {
         "id": "1",
         "original": "audios/original/1_original.wav",
         "female_main": "audios/converted/1.wav",
